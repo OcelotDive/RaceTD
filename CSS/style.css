@@ -1,9 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    backface-visibility: hidden;
-}
+
 html{
     height: 100%;
 	width:100%;
