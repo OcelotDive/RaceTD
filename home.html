@@ -18,11 +18,9 @@
       <script type="text/javascript" src="src/Ticker.js"></script>
      
   </head>
-  <body class="betfred-logo" style="width: 1024px; height: 768px;">   
+  <body>   
     <div ng-controller="mainController as main" style="height:100%;">           
-      <!--<div class="page" ng-show="page.isActive" ng-repeat="page in pages track by page.Id" >            
-        <div id="{{page.Id}}" ng-include="page.TemplateModelID" style="height:100%;"></div>          
-      </div>-->
+    
       <div class="page" ng-view></div>
       
     </div>    
