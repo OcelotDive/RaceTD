@@ -1,0 +1,1007 @@
+<section id="hsOverallPageContent">
+
+	<section class="hsMainHeader">
+		<div class="hsEventTitle" ng-bind="page.Markets[0].EventName"></div>
+		<div class="hsEventSubHeader">{{'OUTRIGHT WINNER'}}</div>
+	</section>
+	<section class="hsMainContent">
+
+
+
+
+
+		<div id="hsSlider" ng-repeat="market in page.Markets" ng-if="(market.Selections | filter:{Price: '!N/A'}).length <= 12">
+
+
+			<div id="firstPlayerSet" class="firstPlayerSetanimation0">
+				<div class="hsPlayerRow" ng-repeat="player in market.Selections | filter:{Price : '!N/A'} | orderBy:'DecimalPrice'" ng-if="$index <= 11">
+					<div class="hsPlayerName" ng-bind="player.Name"></div>
+					<div class="hsPlayerPrice" ng-bind="player.Price"></div>
+				</div>
+
+			</div>
+
+		</div>
+		<!--End Set of One-->
+
+
+
+		<div id="hsSlider" ng-repeat="market in page.Markets" ng-if="(market.Selections | filter:{Price: '!N/A'}).length > 12 && (market.Selections | filter:{Price: '!N/A'}).length <= 24">
+
+
+
+			<div id="firstPlayerSet" class="firstPlayerSetanimation2">
+				<div class="hsPlayerRow" ng-repeat="player in market.Selections | filter:{Price : '!N/A'} | orderBy:'DecimalPrice'" ng-if="$index <= 11">
+					<div class="hsPlayerName" ng-bind="player.Name"></div>
+					<div class="hsPlayerPrice" ng-bind="player.Price"></div>
+				</div>
+
+			</div>
+
+
+
+			<div id="secondPlayerSet" class="secondPlayerSetanimation2">
+				<div class="hsPlayerRow" ng-repeat="player in market.Selections | filter:{Price : '!N/A'} | orderBy:'DecimalPrice'" ng-if="$index >=12 && $index <= 23">
+					<div class="hsPlayerName" ng-bind="player.Name"></div>
+					<div class="hsPlayerPrice" ng-bind="player.Price"></div>
+				</div>
+			</div>
+
+
+		</div>
+
+
+		<div id="hsSlider" ng-repeat="market in page.Markets" ng-if="(market.Selections | filter:{Price: '!N/A'}).length > 24 && (market.Selections | filter:{Price: '!N/A'}).length <= 36">
+
+			<div id="firstPlayerSet" class="firstPlayerSetanimation3">
+				<div class="hsPlayerRow" ng-repeat="player in market.Selections | filter:{Price : '!N/A'} | orderBy:'DecimalPrice'" ng-if="$index <= 11">
+					<div class="hsPlayerName" ng-bind="player.Name"></div>
+					<div class="hsPlayerPrice" ng-bind="player.Price"></div>
+				</div>
+
+			</div>
+
+
+
+			<div id="secondPlayerSet" class="secondPlayerSetanimation3">
+				<div class="hsPlayerRow" ng-repeat="player in market.Selections | filter:{Price : '!N/A'} | orderBy:'DecimalPrice'" ng-if="$index >=12 && $index <= 23">
+					<div class="hsPlayerName" ng-bind="player.Name"></div>
+					<div class="hsPlayerPrice" ng-bind="player.Price"></div>
+				</div>
+			</div>
+
+			<div id="thirdPlayerSet" class="thirdPlayerSetanimation3">
+				<div class="hsPlayerRow" ng-repeat="player in market.Selections | filter:{Price : '!N/A'} | orderBy:'DecimalPrice'" ng-if="$index >=24 && $index <= 35">
+					<div class="hsPlayerName" ng-bind="player.Name"></div>
+					<div class="hsPlayerPrice" ng-bind="player.Price"></div>
+				</div>
+			</div>
+		</div>
+		<!--End set of three-->
+
+
+		<div id="hsSlider" ng-repeat="market in page.Markets" ng-if="(market.Selections | filter:{Price: '!N/A'}).length > 35 && (market.Selections | filter:{Price: '!N/A'}).length <= 48">
+
+			<div id="firstPlayerSet" class="firstPlayerSetanimation4">
+				<div class="hsPlayerRow" ng-repeat="player in market.Selections | filter:{Price : '!N/A'} | orderBy:'DecimalPrice'" ng-if="$index <= 11">
+					<div class="hsPlayerName" ng-bind="player.Name"></div>
+					<div class="hsPlayerPrice" ng-bind="player.Price"></div>
+				</div>
+
+			</div>
+
+
+
+			<div id="secondPlayerSet" class="secondPlayerSetanimation4">
+				<div class="hsPlayerRow" ng-repeat="player in market.Selections | filter:{Price : '!N/A'} | orderBy:'DecimalPrice'" ng-if="$index >=12 && $index <= 23">
+					<div class="hsPlayerName" ng-bind="player.Name"></div>
+					<div class="hsPlayerPrice" ng-bind="player.Price"></div>
+				</div>
+			</div>
+
+			<div id="thirdPlayerSet" class="thirdPlayerSetanimation4">
+				<div class="hsPlayerRow" ng-repeat="player in market.Selections | filter:{Price : '!N/A'} | orderBy:'DecimalPrice'" ng-if="$index >=24 && $index <= 35">
+					<div class="hsPlayerName" ng-bind="player.Name"></div>
+					<div class="hsPlayerPrice" ng-bind="player.Price"></div>
+				</div>
+			</div>
+
+
+
+
+
+			<div id="fourthPlayerSet" class="fourthPlayerSetanimation4">
+				<div class="hsPlayerRow" ng-repeat="player in market.Selections | filter:{Price : '!N/A'} | orderBy:'DecimalPrice'" ng-if="$index >=36 && $index <= 47">
+					<div class="hsPlayerName" ng-bind="player.Name"></div>
+					<div class="hsPlayerPrice" ng-bind="player.Price"></div>
+				</div>
+			</div>
+		</div>
+		<!--end set four-->
+
+
+		<div id="hsSlider" ng-repeat="market in page.Markets" ng-if="(market.Selections | filter:{Price: '!N/A'}).length > 48">
+
+			<div id="firstPlayerSet" class="firstPlayerSetanimation">
+				<div class="hsPlayerRow" ng-repeat="player in market.Selections | filter:{Price : '!N/A'} | orderBy:'DecimalPrice'" ng-if="$index <= 11">
+					<div class="hsPlayerName" ng-bind="player.Name"></div>
+					<div class="hsPlayerPrice" ng-bind="player.Price"></div>
+				</div>
+
+			</div>
+
+
+
+			<div id="secondPlayerSet" class="secondPlayerSetanimation">
+				<div class="hsPlayerRow" ng-repeat="player in market.Selections | filter:{Price : '!N/A'} | orderBy:'DecimalPrice'" ng-if="$index >=12 && $index <= 23">
+					<div class="hsPlayerName" ng-bind="player.Name"></div>
+					<div class="hsPlayerPrice" ng-bind="player.Price"></div>
+				</div>
+			</div>
+
+			<div id="thirdPlayerSet" class="thirdPlayerSetanimation">
+				<div class="hsPlayerRow" ng-repeat="player in market.Selections | filter:{Price : '!N/A'} | orderBy:'DecimalPrice'" ng-if="$index >=24 && $index <= 35">
+					<div class="hsPlayerName" ng-bind="player.Name"></div>
+					<div class="hsPlayerPrice" ng-bind="player.Price"></div>
+				</div>
+			</div>
+
+
+
+
+
+			<div id="fourthPlayerSet" class="fourthPlayerSetanimation">
+				<div class="hsPlayerRow" ng-repeat="player in market.Selections | filter:{Price : '!N/A'} | orderBy:'DecimalPrice'" ng-if="$index >=36 && $index <= 47">
+					<div class="hsPlayerName" ng-bind="player.Name"></div>
+					<div class="hsPlayerPrice" ng-bind="player.Price"></div>
+				</div>
+			</div>
+
+
+
+			<div id="fifthPlayerSet" class="fifthPlayerSetanimation">
+				<div class="hsPlayerRow" ng-repeat="player in market.Selections | filter:{Price : '!N/A'} | orderBy:'DecimalPrice'" ng-if="$index >=48 && $index <= 59">
+					<div class="hsPlayerName" ng-bind="player.Name"></div>
+					<div class="hsPlayerPrice" ng-bind="player.Price"></div>
+				</div>
+			</div>
+
+
+
+		</div>
+		<!--script>
+			let x = document.getElementById('gif');
+
+			setInterval(() => {
+				setTimeout(() => {
+					
+					x.setAttribute('src', "Images/Background/golf-sunset_2014169c.jpg")
+					
+				}, 16000);
+				
+				x.setAttribute('src', "Images/Background/golf3.gif")
+				
+			}, 40000);
+
+		</script-->
+		<div id="imageContainer">
+			<div id="card" class="shadow">
+				<div class="front face">
+		<img id="gif" class="mainImage" src="Images/Background/golf-sunset_2014169c.jpg" />
+				</div>
+				<div class="back face center">
+				<img id="gif" class="mainImage" src="Images/Background/golf3.gif" />
+				</div>
+				</div>
+			
+			</div>
+
+		<!--img class="mainImage" src="Images/Background/prem.jpg"/-->
+	</section>
+	
+	<footer class="hsMainFooter" ng-bind="page.Markets[0].EachWayTerms"></footer>
+
+</section>
+
+<style>
+	
+#imageContainer {
+ position: absolute;
+width: 50%;
+height: 100%;
+	left: 50%;
+	top: 0%;
+	background: #808080;
+	
+}
+#imageContainer {
+  perspective: 1000;
+	
+}
+#card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+#imageContainer #card {
+  transform: rotateY(360deg);
+  box-shadow: -5px 15px 15px #000;
+animation: rotating 39s infinite;
+
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background-color: #aaa;
+	
+}
+	
+	
+	
+	
+	
+	@keyframes rotating {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotateY(0deg);
+  }
+		48% {
+	-ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotateY(0deg);	
+		}
+		50% {
+	-ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotateY(180deg);
+		}
+		90% {
+		-ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotateY(180deg);	
+		}
+  100% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotateY(0deg);
+  }
+}
+
+
+	
+	
+	#hsOverallPageContent {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		font-size: 100%;
+		text-transform: uppercase;
+		font-weight: bold;
+
+	}
+
+	.hsMainHeader {
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		width: 100%;
+		height: 17%;
+		color: #ffffff;
+		text-align: center;
+		background-color: green
+	}
+
+	.hsEventTitle {
+		width: 100%;
+		height: 60%;
+		font-size: 140%;
+		padding-top: 0.6%;
+	}
+
+	.hsEventSubHeader {
+		width: 100%;
+		height: 40%;
+		font-size: 60%;
+	}
+
+	.hsMainContent {
+		position: absolute;
+		top: 17%;
+		height: 78%;
+		width: 100%;
+		border: solid 1px white;
+	}
+
+	#hsSlider {
+		position: absolute;
+		top: 0%;
+		width: 50%;
+		height: 100%;
+		background: #808080;
+		overflow: hidden;
+		position: relative;
+		border: solid white 1px;
+	}
+
+	.mainImage {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0%;
+		top: 0%;
+		background: #808080;
+	}
+
+	.hsMainFooter {
+		position: absolute;
+		bottom: 0%;
+		background: green;
+		text-align: center;
+		color: white;
+		width: 100%;
+		height: 5%;
+	}
+
+	#firstPlayerSet,
+	#secondPlayerSet,
+	#thirdPlayerSet,
+	#fourthPlayerSet,
+	#fifthPlayerSet {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		flex-direction: column;
+		position: absolute;
+		width: 100%;
+		top: 100%;
+		height: 100%;
+	}
+
+
+	.hsPlayerRow {
+		display: flex;
+		flex: 1 1 50%;
+		width: 100%;
+		height: auto;
+		border: solid 1px #808080;
+	}
+
+	.hsPlayerName {
+
+		display: flex;
+		align-items: center;
+		width: 80%;
+		overflow: hidden;
+		white-space: nowrap;
+		background: #ffffff;
+		/* Old browsers */
+		background: -moz-linear-gradient(top, #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff 100%);
+		/* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff 100%);
+		/* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff 100%);
+		/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);
+		/* IE6-9 */
+		text-indent: 0.5%;
+	}
+
+	.hsPlayerPrice {
+		color: white;
+		display: flex;
+		width: 20%;
+		align-items: center;
+		justify-content: space-around;
+		background: #aebcbf;
+		/* Old browsers */
+		background: -moz-linear-gradient(top, #aebcbf 0%, #6e7774 50%, #0a0e0a 51%, #0a0809 100%);
+		/* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #aebcbf 0%, #6e7774 50%, #0a0e0a 51%, #0a0809 100%);
+		/* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #aebcbf 0%, #6e7774 50%, #0a0e0a 51%, #0a0809 100%);
+		/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#0a0809', GradientType=0);
+	}
+
+
+	.firstPlayerSetanimation0 {
+		top: 0% !important;
+	}
+
+	.firstPlayerSetanimation {
+		animation: playercycle 40s linear infinite;
+	}
+
+	.firstPlayerSetanimation2 {
+		animation: playercycle2sets 40s linear infinite;
+	}
+
+	.firstPlayerSetanimation3 {
+		animation: playercycle3sets 40s linear infinite;
+	}
+
+	.firstPlayerSetanimation4 {
+		animation: playercycle4sets 40s linear infinite;
+	}
+
+	.secondPlayerSetanimation {
+		animation: playercycletwo 40s linear infinite;
+	}
+
+	.secondPlayerSetanimation2 {
+		animation: playercycletwo2sets 40s linear infinite;
+	}
+
+	.secondPlayerSetanimation3 {
+		animation: playercycletwo3sets 40s linear infinite;
+	}
+
+	.secondPlayerSetanimation4 {
+		animation: playercycletwo4sets 40s linear infinite;
+	}
+
+	.thirdPlayerSetanimation {
+		animation: playercyclethree 40s linear infinite;
+	}
+
+	.thirdPlayerSetanimation3 {
+		animation: playercyclethree3sets 40s linear infinite;
+	}
+
+	.thirdPlayerSetanimation4 {
+		animation: playercyclethree4sets 40s linear infinite;
+	}
+
+	.fourthPlayerSetanimation {
+		animation: playercyclefour 40s linear infinite;
+	}
+
+	.fourthPlayerSetanimation4 {
+		animation: playercyclefour4sets 40s linear infinite;
+	}
+
+	.fifthPlayerSetanimation {
+		animation: playercyclefive 40s linear infinite;
+	}
+
+
+
+	/* ANIMATION */
+
+	/******DONT TOUCH THIS******/
+
+	@keyframes playercycle {
+		0% {
+			top: 0%;
+		}
+		/* When you start the slide, the first image is already visible */
+		4% {
+			top: 0%;
+		}
+		/* Original Position */
+		16% {
+			top: 0%;
+			opacity: 1;
+			z-index: 0;
+		}
+		/* From 4% to 16 % = for 3 seconds the image is visible */
+		20% {
+			top: -100%;
+			opacity: 0;
+			z-index: 0;
+		}
+		/* From 16% to 20% = for 1 second exit image */
+		21% {
+			top: 100%;
+			opacity: 0;
+			z-index: -1;
+		}
+		/* Return to Original Position */
+		92% {
+			top: 100%;
+			opacity: 0;
+			z-index: 0;
+		}
+		96% {
+			top: 100%;
+			opacity: 0;
+		}
+		/* From 96% to 100% = for 1 second enter image*/
+		100% {
+			top: 0%;
+			opacity: 1;
+		}
+	}
+
+
+
+	/*****DONT TOUCH THIS*****/
+
+	@keyframes playercycletwo {
+		0% {
+			top: 100%;
+			opacity: 0;
+		}
+		/* Original Position */
+		16% {
+			top: 100%;
+			opacity: 0;
+		}
+		/* Starts moving after 16% to this position */
+		20% {
+			top: 0%;
+			opacity: 1;
+		}
+		24% {
+			top: 0%;
+			opacity: 1;
+		}
+		/* From 20% to 24% = for 1 second enter image*/
+		36% {
+			top: 0%;
+			opacity: 1;
+			z-index: 0;
+		}
+		/* From 24% to 36 % = for 3 seconds the image is visible */
+		40% {
+			top: -100%;
+			opacity: 0;
+			z-index: 0;
+		}
+		/* From 36% to 40% = for 1 second exit image */
+		41% {
+			top: -100%;
+			opacity: 0;
+			z-index: -1;
+		}
+		/* Return to Original Position */
+		100% {
+			top: 100%;
+			opacity: 0;
+			z-index: -1;
+		}
+	}
+
+	@keyframes playercyclethree {
+		0% {
+			top: 100%;
+			opacity: 0;
+		}
+		36% {
+			top: 100%;
+			opacity: 0;
+		}
+		40% {
+			top: 0%;
+			opacity: 1;
+		}
+		44% {
+			top: 0%;
+			opacity: 1;
+		}
+		56% {
+			top: 0%;
+			opacity: 1;
+		}
+		60% {
+			top: -100%;
+			opacity: 0;
+			z-index: 0;
+		}
+		61% {
+			top: 100%;
+			opacity: 0;
+			z-index: -1;
+		}
+		100% {
+			top: 100%;
+			opacity: 0;
+			z-index: -1;
+		}
+	}
+
+	@keyframes playercyclefour {
+		0% {
+			top: 100%;
+			opacity: 0;
+		}
+		56% {
+			top: 100%;
+			opacity: 0;
+		}
+		60% {
+			top: 0%;
+			opacity: 1;
+		}
+		64% {
+			top: 0%;
+			opacity: 1;
+		}
+		76% {
+			top: 0%;
+			opacity: 1;
+			z-index: 0;
+		}
+		80% {
+			top: -100%;
+			opacity: 0;
+			z-index: 0;
+		}
+		81% {
+			top: 100%;
+			opacity: 0;
+			z-index: -1;
+		}
+		100% {
+			top: 100%;
+			opacity: 0;
+			z-index: -1;
+		}
+	}
+
+	@keyframes playercyclefive {
+		0% {
+			top: 100%;
+			opacity: 0;
+		}
+		76% {
+			top: 100%;
+			opacity: 0;
+		}
+		80% {
+			top: 0%;
+			opacity: 1;
+		}
+		84% {
+			top: 0%;
+			opacity: 1;
+		}
+		96% {
+			top: 0%;
+			opacity: 1;
+			z-index: 0;
+		}
+		100% {
+			top: -100%;
+			opacity: 0;
+			z-index: 0;
+		}
+	}
+
+	/***************two sets data**********************/
+
+	@keyframes playercycle2sets {
+		0% {
+			top: 100%;
+		}
+		1% {
+			top 0%
+		}
+		/* When you start the slide, the first image is already visible */
+		8% {
+			top: 0%;
+		}
+		/* Original Position */
+		52% {
+			top: 0%;
+			opacity: 1;
+			z-index: 0;
+		}
+		/* From 4% to 16 % = for 3 seconds the image is visible */
+		60% {
+			top: -100%;
+			opacity: 0;
+			z-index: 0;
+		}
+		/* From 16% to 20% = for 1 second exit image */
+		62% {
+			top: 100%;
+			opacity: 0;
+			z-index: -1;
+		}
+		/* Return to Original Position */
+		100% {
+			top: 100%;
+			opacity: 0;
+			z-index: 0;
+		}
+
+
+	}
+
+	@keyframes playercycletwo2sets {
+		0% {
+			top: 0%;
+			opacity: 1;
+		}
+		8% {
+			top: -100%;
+			opacity: 0;
+		}
+		/* Original Position */
+		52% {
+			top: 100%;
+			opacity: 0;
+		}
+		/* Starts moving after 16% to this position */
+		60% {
+			top: 0%;
+			opacity: 1;
+		}
+		64% {
+			top: 0%;
+			opacity: 1;
+		}
+		/* From 20% to 24% = for 1 second enter image*/
+		92% {
+			top: 0%;
+			opacity: 1;
+			z-index: 1;
+		}
+		/* From 24% to 36 % = for 3 seconds the image is visible */
+		100% {
+			top: 0%;
+			opacity: 1;
+			z-index: 1;
+		}
+
+	}
+
+	/**********three sets data*************/
+
+	@keyframes playercycle3sets {
+		0% {
+			top: 100%;
+		}
+		1% {
+			top 0%
+		}
+		/* When you start the slide, the first image is already visible */
+		8% {
+			top: 0%;
+		}
+		/* Original Position */
+		37% {
+			top: 0%;
+			opacity: 1;
+			z-index: 0;
+		}
+		/* From 4% to 16 % = for 3 seconds the image is visible */
+		45% {
+			top: -100%;
+			opacity: 0;
+			z-index: 0;
+		}
+		/* From 16% to 20% = for 1 second exit image */
+		62% {
+			top: 100%;
+			opacity: 0;
+			z-index: -1;
+		}
+		/* Return to Original Position */
+		100% {
+			top: 100%;
+			opacity: 0;
+			z-index: 0;
+		}
+
+
+	}
+
+	@keyframes playercycletwo3sets {
+		0% {
+			top: 0%;
+			opacity: 1;
+		}
+		8% {
+			top: -100%;
+			opacity: 0;
+		}
+		/* Original Position */
+		37% {
+			top: 100%;
+			opacity: 0;
+		}
+		/* Starts moving after 16% to this position */
+		45% {
+			top: 0%;
+			opacity: 1;
+		}
+		66% {
+			top: 0%;
+			opacity: 1;
+		}
+		/* From 20% to 24% = for 1 second enter image*/
+		74% {
+			top: -100%;
+			opacity: 1;
+			z-index: 1;
+		}
+		/* From 24% to 36 % = for 3 seconds the image is visible */
+		100% {
+			top: -100%;
+			opacity: 0;
+			z-index: 0;
+		}
+
+	}
+
+
+
+	@keyframes playercyclethree3sets {
+		0% {
+			top: 100%;
+			opacity: 0;
+		}
+		66% {
+			top: 100%;
+			opacity: 0;
+		}
+		74% {
+			top: 0%;
+			opacity: 1;
+
+		}
+		100% {
+			top: 0%;
+			opacity: 1;
+		}
+
+	}
+
+	/******four sets of data*********/
+
+	@keyframes playercycle4sets {
+		0% {
+			top: 100%;
+		}
+		1% {
+			top 0%
+		}
+		/* When you start the slide, the first image is already visible */
+		8% {
+			top: 0%;
+		}
+		/* Original Position */
+		25% {
+			top: 0%;
+			opacity: 1;
+			z-index: 0;
+		}
+		/* From 4% to 16 % = for 3 seconds the image is visible */
+		33% {
+			top: -100%;
+			opacity: 0;
+			z-index: 0;
+		}
+		/* From 16% to 20% = for 1 second exit image */
+		62% {
+			top: 100%;
+			opacity: 0;
+			z-index: -1;
+		}
+		/* Return to Original Position */
+		100% {
+			top: 100%;
+			opacity: 0;
+			z-index: 0;
+		}
+
+
+	}
+
+	@keyframes playercycletwo4sets {
+		0% {
+			top: 0%;
+			opacity: 1;
+		}
+		8% {
+			top: -100%;
+			opacity: 0;
+		}
+		/* Original Position */
+		25% {
+			top: 100%;
+			opacity: 0;
+		}
+		/* Starts moving after 16% to this position */
+		33% {
+			top: 0%;
+			opacity: 1;
+		}
+		54% {
+			top: 0%;
+			opacity: 1;
+		}
+		/* From 20% to 24% = for 1 second enter image*/
+		62% {
+			top: -100%;
+			opacity: 1;
+			z-index: 1;
+		}
+		/* From 24% to 36 % = for 3 seconds the image is visible */
+		100% {
+			top: -100%;
+			opacity: 0;
+			z-index: 0;
+		}
+
+	}
+
+
+
+	@keyframes playercyclethree4sets {
+		0% {
+			top: 100%;
+			opacity: 0;
+		}
+		54% {
+			top: 100%;
+			opacity: 0;
+		}
+		62% {
+			top: 0%;
+			opacity: 1;
+
+		}
+		77% {
+			top: 0%;
+			opacity: 1;
+		}
+		85% {
+			top: -100%;
+			opacity: 1;
+
+		}
+
+
+		100% {
+			top: -100%;
+			opacity: 1;
+		}
+
+	}
+
+	@keyframes playercyclefour4sets {
+		0% {
+			top: 100%;
+			opacity: 0;
+		}
+		77% {
+			top: 100%;
+			opacity: 0;
+		}
+		85% {
+			top: 0%;
+			opacity: 1;
+		}
+		100% {
+			top: 0%;
+			opacity: 1;
+		}
+
+	}
+
+</style>
