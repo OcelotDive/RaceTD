@@ -22,6 +22,6 @@ body{
     opacity: 1;
     z-index:1;
     will-change:transform;
-    font-size: 2.2vw;
+    font-size: 100%;
 }
 
