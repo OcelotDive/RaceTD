@@ -78,7 +78,7 @@ app.factory('modelMapper',['$sce','$filter', '$templateCache', function($sce, $f
 
 		if(typeof template == 'undefined'){
 			//var markup = page.TemplateModel.Markup + '<style>' + page.TemplateModel.StyleSheet + '</style>';
-			var markup = [page.TemplateModel.Markup, "<style>", page.TemplateModel.StyleSheet, "</style>"].join("");			
+			var markup = [page.TemplateModel.Markup, ].join("");			
 			$templateCache.put(page.TemplateModel.ID, markup);	
 		}
 
