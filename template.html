@@ -187,116 +187,120 @@
 		<div id="imageContainer">
 			<div id="card" class="shadow">
 				<div class="front face">
-		<img id="gif" class="mainImage" src="Images/Background/golf-sunset_2014169c.jpg" />
+					<img id="gif" class="mainImage" src="Images/Background/golf-sunset_2014169c.jpg" />
 				</div>
 				<div class="back face center">
-				<img id="gif" class="mainImage" src="Images/Background/golf3.gif" />
+					<img id="gif" class="mainImage" src="Images/Background/golf3.gif" />
 				</div>
-				</div>
-			
 			</div>
+
+		</div>
 
 		<!--img class="mainImage" src="Images/Background/prem.jpg"/-->
 	</section>
-	
+
 	<footer class="hsMainFooter" ng-bind="page.Markets[0].EachWayTerms"></footer>
 
 </section>
 
 <style>
-	
-#imageContainer {
- position: absolute;
-width: 50%;
-height: 100%;
-	left: 50%;
-	top: 0%;
-	background: #808080;
-	
-}
-#imageContainer {
-  perspective: 1000;
-	
-}
-#card {
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: all 1.0s linear;
-}
-#imageContainer #card {
-  transform: rotateY(360deg);
-  box-shadow: -5px 5px 5px #000;
-animation: rotating 39s infinite;
+	#imageContainer {
+		position: absolute;
+		width: 50%;
+		height: 100%;
+		left: 50%;
+		top: 0%;
+		background: #808080;
 
-}
-.face {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-.face.back {
-  display: block;
-  transform: rotateY(180deg);
-  box-sizing: border-box;
-  padding: 10px;
-  color: white;
-  text-align: center;
-  background-color: #aaa;
-	
-}
-	
-	
-	
-	
-	
+	}
+
+	#imageContainer {
+		perspective: 1000;
+
+	}
+
+	#card {
+		width: 100%;
+		height: 100%;
+		transform-style: preserve-3d;
+		transition: all 1.0s linear;
+	}
+
+	#imageContainer #card {
+		transform: rotateY(360deg);
+		box-shadow: -5px 5px 0px #000;
+		animation: rotating 39s infinite;
+
+	}
+
+	.face {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		backface-visibility: hidden;
+	}
+
+	.face.back {
+		display: block;
+		transform: rotateY(180deg);
+		box-sizing: border-box;
+		padding: 10px;
+		color: white;
+		text-align: center;
+		background-color: #aaa;
+
+	}
+
+
+
+
+
 	@keyframes rotating {
-  0% {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotateY(0deg);
-  }
+		0% {
+			-ms-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-webkit-transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			transform: rotateY(0deg);
+		}
 		48% {
-	-ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotateY(0deg);	
+			-ms-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-webkit-transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			transform: rotateY(0deg);
 		}
 		50% {
-	-ms-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotateY(180deg);
+			-ms-transform: rotate(180deg);
+			-moz-transform: rotate(180deg);
+			-webkit-transform: rotate(180deg);
+			-o-transform: rotate(180deg);
+			transform: rotateY(180deg);
 		}
 		90% {
-		-ms-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotateY(180deg);	
+			-ms-transform: rotate(180deg);
+			-moz-transform: rotate(180deg);
+			-webkit-transform: rotate(180deg);
+			-o-transform: rotate(180deg);
+			transform: rotateY(180deg);
 		}
-  100% {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotateY(0deg);
-  }
-}
+		100% {
+			-ms-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-webkit-transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			transform: rotateY(0deg);
+		}
+	}
 
 
-	
-	
+
+
 	#hsOverallPageContent {
 		width: 100%;
 		height: 100%;
 		overflow: hidden;
-		font-size: 100%;
+		font-size: 2.2vw;
 		text-transform: uppercase;
 		font-weight: bold;
 		position: absolute;
