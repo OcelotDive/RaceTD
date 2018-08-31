@@ -169,21 +169,7 @@
 
 
 		</div>
-		<!--script>
-			let x = document.getElementById('gif');
-
-			setInterval(() => {
-				setTimeout(() => {
-					
-					x.setAttribute('src', "Images/Background/golf-sunset_2014169c.jpg")
-					
-				}, 16000);
-				
-				x.setAttribute('src', "Images/Background/golf3.gif")
-				
-			}, 40000);
-
-		</script-->
+		
 		<div id="imageContainer">
 			<div id="card" class="shadow">
 				<div class="front face">
@@ -196,7 +182,7 @@
 
 		</div>
 
-		<!--img class="mainImage" src="Images/Background/prem.jpg"/-->
+	
 	</section>
 
 	<footer class="hsMainFooter" ng-bind="page.Markets[0].EachWayTerms"></footer>
@@ -216,6 +202,9 @@
 
 	#imageContainer {
 		-webkit-perspective: 1000;
+		-moz-perspective: 1000;
+		-ms-perspective: 1000;
+		-o-perspective: 1000;
 		        perspective: 1000;
 
 	}
@@ -224,21 +213,38 @@
 		width: 100%;
 		height: 100%;
 		-webkit-transform-style: preserve-3d;
-		        transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		-ms-transform-style: preserve-3d;
+		-o-transform-style: preserve-3d;
+		 transform-style: preserve-3d;
 		-webkit-transition: all 1.0s linear;
+		-moz-transition: all 1.0s linear;
+		-ms-transition: all 1.0s linear;
 		-o-transition: all 1.0s linear;
-		transition: all 1.0s linear;
+		 transition: all 1.0s linear;
 	}
 
 	#imageContainer #card {
 		-webkit-transform: rotateY(360deg);
-		        transform: rotateY(360deg);
+		-moz-transform: rotateY(360deg);
+		-ms-transform: rotateY(360deg);
+		-o-transform: rotateY(360deg);
+		 transform: rotateY(360deg);
 		-webkit-box-shadow: -5px 5px 0px #000;
-		        box-shadow: -5px 5px 0px #000;
+		-moz-box-shadow: -5px 5px 0px #000;
+		-ms-box-shadow: -5px 5px 0px #000;
+		-o-box-shadow: -5px 5px 0px #000;
+		 box-shadow: -5px 5px 0px #000;
 		-webkit-animation: rotating 37s 2;
-		        animation: rotating 37s 2;
+		-moz-animation: rotating 37s 2;
+		-ms-animation: rotating 37s 2;
+		-o-animation: rotating 37s 2;
+		   animation: rotating 37s 2;
 		-webkit-animation-delay: 2s;
-		        animation-delay: 2s;
+		-moz-animation-delay: 2s;
+		-ms-animation-delay: 2s;
+		-o-animation-delay: 2s;
+		   animation-delay: 2s;
 
 	}
 
@@ -247,15 +253,24 @@
 		width: 100%;
 		height: 100%;
 		-webkit-backface-visibility: hidden;
-		        backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		-ms-backface-visibility: hidden;
+		-o-backface-visibility: hidden;
+		   backface-visibility: hidden;
 	}
 
 	.face.back {
 		display: block;
 		-webkit-transform: rotateY(180deg);
-		        transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+		-ms-transform: rotateY(180deg);
+		-o-transform: rotateY(180deg);
+		   transform: rotateY(180deg);
 		-webkit-box-sizing: border-box;
-		        box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		   box-sizing: border-box;
 		padding: 10px;
 		color: white;
 		text-align: center;
@@ -356,7 +371,7 @@
 	}
 
 	#hsSlider {
-		position: absolute;
+		/*position: absolute;*/
 		top: 0%;
 		left: 0%;
 		width: 50%;
@@ -385,9 +400,12 @@
 		width: 100%;
 		height: 5%;
 		display: -webkit-box;
+		display: -moz-box;
 		display: -ms-flexbox;
+		display: -webkit-flex;
 		display: flex;
 	    -webkit-box-align: center;
+		-moz-box-align: center;
 	        -ms-flex-align: center;
 	            align-items: center;
 		-webkit-box-pack: center;
@@ -401,7 +419,9 @@
 	#fourthPlayerSet,
 	#fifthPlayerSet {
 		display: -webkit-box;
+		display: -moz-box;
 		display: -ms-flexbox;
+		display: -webkit-flex;
 		display: flex;
 		width: 100%;
 		height: 100%;
@@ -421,6 +441,7 @@
 		display: -ms-flexbox;
 		display: flex;
 		-webkit-box-flex: 1;
+		-moz-flex: 1 1 50%;
 		    -ms-flex: 1 1 50%;
 		        flex: 1 1 50%;
 		width: 100%;
@@ -462,10 +483,10 @@
 		display: flex;
 		width: 20%;
 		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
+		-ms-flex-align: center;
+		 align-items: center;
 		-ms-flex-pack: distribute;
-		    justify-content: space-around;
+		justify-content: space-around;
 		background: #aebcbf;
 		/* Old browsers */
 		/* FF3.6-15 */
